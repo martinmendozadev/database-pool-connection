@@ -1,0 +1,156 @@
+    /* ESTILO GENERAL*/
+body{
+    background-image: url(../images/fondo.jpg);
+    font-family: 'EB Garamond', serif;
+    margin: auto;
+}
+
+h1{
+    font-size: 1.7em;
+    background-color: #DAE3E5;
+    text-align: center;
+    overflow: hidden;
+}
+
+h3{
+    font-size: 1em;
+    margin: 20px;
+    text-align: center;
+}
+
+p{
+    border: 2px solid #507DBC;
+    margin: 10px 8px;
+    background-color: #DAE3E5;
+}
+
+#contenido{
+    margin: 15px;
+    border: 4px solid#507DBC;   
+    background-color:#A1C6EA;
+    border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -webkit-border-radius: 0 0 30px 30px;
+}
+
+    /*BANNER*/
+#banner{
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid#507DBC; 
+    background-color:#A1C6EA;
+
+    border-radius: 30px 30px 0 0;
+    -moz-border-radius: 30px 30px 0 0;
+    -webkit-border-radius: 30px 30px  0 0;
+}
+
+#banner h1{
+    font-size: 2em;
+    text-shadow: 6px 2px #A1C6EA;
+    text-align: center;
+    background-image: url(../images/b1.jpg);
+    border-radius: 1em;
+}
+
+img.figura{
+    margin: 10px 0 10px 20px;
+    float: left;
+    border: 2px solid #507DBC;
+    background-color: #DAE3E5;
+    padding: 7px;
+    border-radius: 1em;
+}
+
+#banner p:first-of-type{
+    margin: 2px solid #507DBC;
+    border: 0;
+    border-top: 2px solid #507DBC;
+    background-color: #A1C6EA;
+    text-align: center;
+}
+
+    /*BOTONES DE BANNER*/
+.button {
+	width:200px;
+	font-size:1em;
+	margin:10px;
+	padding:10px 0;
+	color:#fff;
+	background:  #507DBC;
+	display:inline-block;
+	text-align:center;
+	text-decoration:none;
+    box-shadow:0px 3px 0px #373c3c;
+    border-radius:10px;
+	margin-right:10px;
+}
+ 
+.button:hover {
+	box-shadow:0px 0px 0px;
+    padding-top:7px;
+    background-color:#DAE3E5;
+    color: #085e5e;
+}
+
+    /*CABEZA DE HOJA-TITULO*/
+#tema .inf{
+    border: 0;
+    margin: 0;
+    padding-left: 10px;
+    background-color:  #DAE3E5;
+    border-left: 2px solid #507DBC;
+    border-right: 2px solid #507DBC;
+}
+
+#tema p:last-of-type{
+    border-bottom: 2px solid #507DBC; 
+}
+
+#tema h1{
+    border: 2px solid #507DBC;
+    border-bottom: 0;
+    border-top: 5px solid #507DBC;
+}
+
+#confidencial{
+    text-align: center;
+}
+
+/*ESTILO HOJA DE DATOS*/
+
+#datos.info p{
+    margin: 20px;
+    width: 200px;
+    height: 55px;
+    padding: 7px;
+    border-radius: 1em;
+    float: left;
+}
+
+#datos p.radioex{
+    width: 350px;
+}
+
+#datos textarea{
+    margin: 20px;
+    border: 2px solid  #507DBC;
+    background-color: whitesmoke;
+}
+
+.nicEdit-main{
+    margin: 20px;
+    border: 3px solid  #507DBC;
+    background-color: white;
+    float: left;
+}
+
+#enviar.button {
+    width: 150px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: block;
+}

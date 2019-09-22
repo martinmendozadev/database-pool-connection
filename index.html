@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Veterinaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="JavaScript" src="js/validacion.js"></script>
+    <script language="JavaScript" src="js/util/fecha.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div id="banner">
+                    <h1>
+                        <img src="images/logo.png" height="60" width="60" class="figura">
+                        <strong>CLÍNICA VETERINARIA</strong>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div id="contenido">
+                    <div id="tema">
+                        <h1>
+                            <strong>Registro de Mascota</strong>
+                        </h1>
+                        <p class="inf" id="confidencial">
+                            CONFIDENCIAL
+                        </p>
+                        <p class="inf">
+                            Sea tan amable de llenar esta solicitud.
+                        </p>
+                        <p class="inf">
+                            <strong>NOTA:</strong> Toda información aqui proporcionada será tratada confidencialmente.
+                        </p>
+                    </div>
+                    <div id="datos" class="info">
+                        <h3>
+                            DATOS GENERALES
+                        </h3>
+                        <form name="form1" method="post" action="servlet/altas"></form>
+                        <p class="info select">
+                            Motivo de Ingreso<strong>
+                                <font color="#FF0000">*</font>
+                            </strong><br>
+                            <select name="motivoIn" id="Motivo/Ingreso">
+                                <option value="0">...</option>
+                                <option value="1">Consulta</option>
+                                <option value="2">Emergencia</option>
+                                <option value="3">Estancia</option>
+                            </select>
+                        </p>
+                        <p>
+                            Nombre Mascota <strong>
+                                <font color="#FF0000">*</font>
+                            </strong><br>
+                            <input type="text" name="nombrem" id="Nombre/Mascota" size="20" placeholder="Max">
+                        </p>
+                        <p class="radioex">
+                            Sexo <br>
+                            <input type="radio" name="hm1" value="m"> Macho
+                            <input type="radio" name="hm1" value="f"> Hembra
+                            <input type="radio" name="hm1" value="-"> Otro
+                        </p>
+                        <p class="radioex">
+                            Especie<strong>
+                                <font color="#FF0000">*</font>
+                            </strong><br>
+                            <input type="radio" name="hm2" value="1"> Canino
+                            <input type="radio" name="hm2" value="2"> Felino
+                            <input type="radio" name="hm2" value="3"> Reptil
+                            <input type="radio" name="hm2" value="4"> Otro
+                        </p>
+                        <input id="enviar" class="btn btn-primary" type="submit" value="Guardar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+<!--
+   /*onSubmit="return validar('form1')"*/ 
+-->
+
+</html>
