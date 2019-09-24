@@ -46,8 +46,8 @@ public class altas extends HttpServlet {
       // paso 2 obtenemos conexion
       String url = "jdbc:mysql://localhost:3306/veterinaria";
 
-      String usuario = "root";
-      String password = "";
+      String usuario = "usuario";
+      String password = "123qwe";
 
       out.println("Conectado ..." + url);
       Connection conexion = DriverManager.getConnection(url, usuario, password);
