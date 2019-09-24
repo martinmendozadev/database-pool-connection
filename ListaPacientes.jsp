@@ -11,14 +11,10 @@
     <title>Imprimir</title>
 </head>
 
-<% 
-    List<pacientes> lospacientes=(List<pacientes>) request.getAttribute("LISTAPACIENTES");
-    %>
+<% List<pacientes> lospacientes=(List<pacientes>) request.getAttribute("LISTAPACIENTES"); %>
 
 <body>
-
     <% lospacientes %>
-
 </body>
 
 </html>

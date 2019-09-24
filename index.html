@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Veterinaria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--Importamos una fuente de letras-->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato|Roboto+Mono&display=swap" rel="stylesheet">
+    <!--Referencia a hojas de estilo-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
@@ -16,6 +17,7 @@
 <body>
     <div class="container">
         <div class="row mt-3">
+            <!--Todo este bloque es para el carrusel de imagenes-->
             <div class="col-12 mt-3">
                 <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -63,12 +65,13 @@
         <div class="col">
             <div id="contenido">
 
-                <!-- registro M-->
+                <!--Nuestro sub encabezado-->
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
                         <h1 class="display-4"><strong>Registro de Mascota</strong></h1>
                         <p class="lead">CONFIDENCIAL</p>
                         <hr class="my-4">
+                        <!--Notificamos del uso de datos-->
                         <p class="lead">Sea tan amable de llenar esta solicitud.</p>
                         <p class="inf"><strong>NOTA:</strong> Toda información aqui proporcionada será tratada confidencialmente.</p>
                     </div>
@@ -78,11 +81,13 @@
                     <div class="container">
                         <h1>DATOS GENERALES</h1>
 
-                        <!-- inicio formulario-->
+                        <!-- Inicio formulario- metodo post y referencia al Servlet-->
                         <form name="form1" method="post" action="servlet/altas">
+                            <!--COntruimos una tabla-->
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
+                                        <!--Titulo del Apartado-->
                                         <th scope="col">
                                             <p>Información del paciente</p>
                                         </th>
@@ -93,6 +98,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
+                                            <!--Input para introducir el motivo de Ingreso-->
                                             <p>Motivo de Ingreso <strong><font color="#FF0000">*</font></strong></p>
                                             <select name="motivoIn" id="Motivo/Ingreso">
                                                 <option value="0">...</option>
@@ -102,44 +108,56 @@
                                             </select>
                                         </td>
                                         <td>
+                                            <!--Solicitamos el Nombre de la mascota-->
                                             <p>Nombre Mascota <strong><font color="#FF0000">*</font></strong></p>
                                             <input type="text" name="nombrem" id="Nombre/Mascota" size="20" placeholder="Max">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p class="radioex">Sexo</p>
-                                            <input type="radio" name="hm1" value="m"> Macho
-                                            <input type="radio" name="hm1" value="f"> Hembra
-                                            <input type="radio" name="hm1" value="-"> Otro
+                                            <!--Radio button para definir Sexo de la mascota-->
+                                            <p class="radioex">Sexo <strong><font color="#FF0000">*</font></strong></p>
+                                            <input type="radio" name="hm1" value="macho"> Macho
+                                            <input type="radio" name="hm1" value="hembra"> Hembra
+                                            <input type="radio" name="hm1" value="otro"> Otro
                                         </td>
                                         <td>
+                                            <!--Datos de expecie-->
                                             <p class="radioex">Especie<strong><font color="#FF0000">*</font></strong></p>
-                                            <input type="radio" name="hm2" value="1"> Canino
-                                            <input type="radio" name="hm2" value="2"> Felino
-                                            <input type="radio" name="hm2" value="3"> Reptil
-                                            <input type="radio" name="hm2" value="4"> Otro
+                                            <input type="radio" name="hm2" value="Canino"> Canino
+                                            <input type="radio" name="hm2" value="Felino"> Felino
+                                            <input type="radio" name="hm2" value="Reptil"> Reptil
+                                            <input type="radio" name="hm2" value="Otro"> Otro
                                         </td>
                                     </tr>
                                     <tr>
+                                        <!--Botón de envío-->
                                         <td>
                                             <input id="enviar" class="btn btn-lg btn-primary" type="submit" value="Guardar">
                                         </td>
                                     </tr>
                                 </tbody>
+                                <!--Cierra la tabla-->
                             </table>
                         </form>
                         <!--Cierre formulario-->
-
                     </div>
                 </div>
+
+                <!--Sub acciones-->
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <!--Un link a cada servlet más-->
+                        <a href="ListaPacientes.jsp" class="btn btn-success btn-lg btn-block">Consulta a BD</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
+    <!--Agregamos nuestra librerias de JS-->
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>
