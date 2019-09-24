@@ -54,8 +54,7 @@ public class altas extends HttpServlet {
       out.println("<br> Conexion lista");
 
       // paso 3 contruccion del query
-      String query = "insert into datos (motivoIng,nombreMas,sexo,especie) values('" + motivoIng + "','" + nombreMas
-          + "','" + sexo + "','" + especie + "','" + peso + "')";
+      String query = "insert into datos (motivoIng,nombreMas,sexo,especie) values('" + motivoIng + "','" + nombreMas+ "','" + sexo + "','" + especie +"')";
       out.println("<br>" + query);
 
       // paso 4 canal de comunicacion
