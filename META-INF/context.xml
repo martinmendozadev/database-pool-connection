@@ -3,7 +3,7 @@
 <Context crossContext="true" reloadable="true">
     <Resource
         name="jdbc/veterinaria" auth="Container" type="javax.sql.DataSource"
-        maxActive="15" maxIdle="3" maxWait="5000"
+        maxActive="10" maxIdle="3" maxWait="5000"
         username="usuario" password="123qwe"
         driverClassName="com.mysql.jdbc.Driver"
         url="jdbc:mysql://localhost:3306/veterinaria"
