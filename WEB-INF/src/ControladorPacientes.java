@@ -1,6 +1,9 @@
 import java.io.*;
-
-//import com.sun.corba.se.spi.protocol.RequestDispatcherDefault;
+import java.util.List;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.rmi.ServerException;
+import com.sun.corba.se.spi.protocol.RequestDispatcherDefault;
 
 public class ControladorPacientes extends HttpServlet {
 
